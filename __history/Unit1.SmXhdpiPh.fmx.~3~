@@ -1,0 +1,125 @@
+inherited Form1_SmXhdpiPh: TForm1_SmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 250
+  Fill.Kind = Gradient
+  Fill.Gradient.Points = <
+    item
+      Color = xFF190C5B
+      Offset = 0.000000000000000000
+    end
+    item
+      Color = claWhite
+      Offset = 1.000000000000000000
+    end>
+  Fill.Gradient.StartPosition.X = 0.266846179962158200
+  Fill.Gradient.StartPosition.Y = 1.000000000000000000
+  Fill.Gradient.StopPosition.X = 0.733153820037841800
+  Fill.Gradient.StopPosition.Y = -0.000000025007132365
+  DesignerMasterStyle = 3
+  inherited Edit1: TEdit
+    Align = Scale
+    TextSettings.Font.Size = 11.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Saisi la cl'#233
+    StyledSettings = [Family, Style, FontColor]
+  end
+  inherited Memo1: TMemo
+    StyledSettings = [Family, Style, FontColor]
+    TextSettings.Font.Size = 11.000000000000000000
+    Align = Scale
+    Position.X = 8.000000000000000000
+    Position.Y = 81.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    Viewport.Width = 233.000000000000000000
+    Viewport.Height = 60.000000000000000000
+  end
+  inherited Memo2: TMemo
+    StyledSettings = [Family, Style, FontColor]
+    TextSettings.Font.Size = 11.000000000000000000
+    Align = Scale
+    Position.X = 8.000000000000000000
+    Position.Y = 166.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    Viewport.Width = 233.000000000000000000
+    Viewport.Height = 60.000000000000000000
+  end
+  inherited Memo3: TMemo
+    StyledSettings = [Family, Style, FontColor]
+    TextSettings.Font.Size = 11.000000000000000000
+    Align = Scale
+    Position.X = 8.000000000000000000
+    Position.Y = 254.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    Viewport.Width = 233.000000000000000000
+    Viewport.Height = 60.000000000000000000
+  end
+  inherited Button1: TButton
+    Align = Scale
+    StyledSettings = [Family]
+    Position.X = 8.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Chiffr'#233
+    TextSettings.Font.Size = 11.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claWhite
+    TintColor = claTurquoise
+    OnClick = Button1Click
+  end
+  inherited Button2: TButton
+    Align = Scale
+    StyledSettings = [Family]
+    Position.X = 136.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Dechiffr'#233
+    TextSettings.Font.Size = 11.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claWhite
+    TintColor = claTurquoise
+    OnClick = Button2Click
+  end
+  inherited Label1: TLabel
+    Align = Scale
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 55.000000000000000000
+    TextSettings.Font.Size = 11.000000000000000000
+    Text = 'Message'
+  end
+  inherited Label2: TLabel
+    Align = Scale
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 141.000000000000000000
+    TextSettings.Font.Size = 11.000000000000000000
+    Text = 'Message Chiffr'#233
+  end
+  inherited Label3: TLabel
+    Align = Scale
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 229.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 11.000000000000000000
+    Text = 'Message Dechiffr'#233
+  end
+  inherited Label4: TLabel
+    Align = Scale
+    Position.X = 46.000000000000000000
+    Position.Y = 4.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Chiffre de Cesar'
+  end
+end

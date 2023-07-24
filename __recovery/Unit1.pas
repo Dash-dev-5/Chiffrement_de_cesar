@@ -1,0 +1,79 @@
+unit Unit1;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Memo.Types,
+  FMX.StdCtrls, FMX.Edit, FMX.ScrollBox, FMX.Memo, FMX.Controls.Presentation;
+
+type
+  TForm1 = class(TForm)
+    Edit1: TEdit;
+    Memo1: TMemo;
+    Memo2: TMemo;
+    Memo3: TMemo;
+    Button1: TButton;
+    Button2: TButton;
+    ClearEditButton1: TClearEditButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    EditButton1: TEditButton;
+    function Crypter_cesar(chaine:string;k:byte):string;
+    function DeCrypter_cesar(chaine:string;k:byte):string;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.fmx}
+{$R *.SmXhdpiPh.fmx ANDROID}
+{$R *.Windows.fmx MSWINDOWS}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  memo2.Text := Crypter_cesar(memo1.Text,strtoint(edit1.text));
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  memo3.Text := DeCrypter_cesar(memo2.Text,strtoint(edit1.text));
+end;
+
+function TForm1.Crypter_cesar(chaine: string; k: byte): string;
+var
+i:integer;
+Xi,Yi:byte;
+begin
+	Result := '';
+	for i:=1 to length(chaine) do
+	begin
+		Xi:= ord(chaine[i]);
+		Yi:= Xi+k;
+	Result:= Result + chr(Yi);
+end;
+end;
+function TForm1.DeCrypter_cesar(chaine: string; k: byte): string;
+var
+i:integer;
+Xi,Yi:byte;
+begin
+	Result := '';
+	for i:=1 to length(chaine) do
+	begin
+		Yi := ord(chaine[i]);
+		Xi := Yi-k;
+	Result := Result + chr(Xi);
+end;
+end;
+end.
